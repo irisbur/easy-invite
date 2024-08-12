@@ -16,7 +16,7 @@ driver.get('https://web.whatsapp.com')
 input('Scan the QR code and then press Enter to continue...')
 
 # Path to the image
-image_path = './invite.png'  # Ensure this is the correct path to your image
+image_path = '/Users/irisburmistrov/PycharmProjects/easy-invite/invite.png'  # Ensure this is the correct path to your image
 
 # Iterate over each guest in the list
 for index, row in df.iterrows():
