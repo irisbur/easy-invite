@@ -48,13 +48,6 @@ for index, row in df.iterrows():
     image_input.send_keys(image_path)
     time.sleep(2)  # Wait for the image to upload
 
-    # Add a heart emoji to the caption (💖)
-    caption_box = WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located((By.XPATH, '//div[@contenteditable="true"][@data-tab="6"]'))
-    )
-    caption_box.send_keys("💖")
-    time.sleep(2)  # Wait for the emoji to be entered
-
     # Send the image and emoji
     send_image_button = WebDriverWait(driver, 20).until(
         EC.element_to_be_clickable((By.XPATH, '//span[@data-icon="send"]'))
